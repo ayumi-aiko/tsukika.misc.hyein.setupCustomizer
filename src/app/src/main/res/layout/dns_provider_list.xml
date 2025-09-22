@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/dns_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/google_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/google_dns"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp"/>
+        <!-- one.one.one.one -->
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/cloudflare_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/cloudflare_dns"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+        <!-- dns.umbrella.com -->
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/opendns_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/opendns"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+        <!-- dns.quad9.net -->
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/quad9_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/quad9dns"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+    </RadioGroup>
+</LinearLayout>

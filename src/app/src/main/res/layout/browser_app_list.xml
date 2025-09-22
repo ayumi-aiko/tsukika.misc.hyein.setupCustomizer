@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/browser_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/chrome_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/chrome"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/firefox_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/firefoxfocus"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/vivaldi_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/vivaldi"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/ugc_radio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/ugc"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:drawablePadding="12dp"
+            android:padding="12dp" />
+    </RadioGroup>
+</LinearLayout>

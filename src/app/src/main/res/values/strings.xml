@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">setupCustomizer</string>
+    <string name="welcome">Welcome to Tsukika!</string>
+    <string name="setupdiag">This wizard will guide you through the initial setup of the module.</string>
+    <string name="next">Next</string>
+    <string name="first_fragment_label">Welcome Fragment</string>
+    <string name="second_fragment_label">Select Browser</string>
+    <string name="third_fragment_label">Select DNS Provider</string>
+    <string name="selectbrowser">Select the Browser you want to install.</string>
+    <string name="firefoxfocus">Firefox Focus</string>
+    <string name="vivaldi">Vivaldi</string>
+    <string name="ugc">Ungoogled Chrome</string>
+    <string name="selectdns">Select the DNS you want to set.</string>
+    <string name="chrome">Chrome</string>
+    <string name="google_dns">Google DNS</string>
+    <string name="cloudflare_dns">Cloudflare DNS</string>
+    <string name="opendns">OpenDNS</string>
+    <string name="quad9dns">Quad9 DNS</string>
+    <string name="stubstring">%s</string>
+</resources>
