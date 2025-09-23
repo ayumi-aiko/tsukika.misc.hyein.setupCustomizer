@@ -4,5 +4,5 @@ class Rhapsody {
     val keyDNS = "selected_dns";
     val keyBrowser = "selected_browser";
     val keyFinalize = "finalize_prefs";
-    var lastActivity = "start";
+    var lastActivity = "YetToStart";
 }

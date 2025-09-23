@@ -17,4 +17,8 @@
     <string name="opendns">OpenDNS</string>
     <string name="quad9dns">Quad9 DNS</string>
     <string name="stubstring">%s</string>
+    <string name="skippingbrowser">Skipping browser installation…</string>
+    <string name="skippingdns">Skipping DNS setup…</string>
+    <string name="finished">You\'re all set up, Thanks🥰</string>
+    <string name="finishedButton">Continue</string>
 </resources>

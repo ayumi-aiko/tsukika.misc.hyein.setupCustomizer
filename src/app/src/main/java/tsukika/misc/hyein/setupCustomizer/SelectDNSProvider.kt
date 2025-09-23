@@ -1,19 +1,14 @@
 package tsukika.misc.hyein.setupCustomizer
 import android.content.Context
 import android.content.Intent
-import android.graphics.Point
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.RadioGroup
 import androidx.core.content.edit
-import android.graphics.Rect
-import android.os.Build
-import androidx.core.content.ContextCompat
 
 class SelectDNSProvider : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,17 +26,6 @@ class SelectDNSProvider : Fragment() {
             putInt(rhap.keyDNS, dnsValue);
             apply();
         };
-        val windowManager = ContextCompat.getSystemService(requireContext(), WindowManager::class.java)!!
-        val bounds = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            windowManager.currentWindowMetrics.bounds
-        }
-        else {
-            val size = Point()
-            windowManager.defaultDisplay.getRealSize(size)
-            Rect(0, 0, size.x, size.y)
-        }
-        val width: Int = bounds.width();
-        val height: Int = bounds.height();
         view?.findViewById<ImageButton>(R.id.finalizeButton)?.setOnClickListener {
             startActivity(Intent(requireContext(), FinalizeActivity::class.java));
         }
