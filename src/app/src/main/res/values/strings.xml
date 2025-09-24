@@ -21,4 +21,6 @@
     <string name="skippingdns">Skipping DNS setup…</string>
     <string name="finished">You\'re all set up, Thanks🥰</string>
     <string name="finishedButton">Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

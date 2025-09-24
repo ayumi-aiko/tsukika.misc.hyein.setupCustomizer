@@ -11,9 +11,9 @@ import android.widget.RadioGroup
 import androidx.core.content.edit
 
 class SelectDNSProvider : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState);
-        val selectedId = view?.findViewById<RadioGroup>(R.id.dns_group)?.checkedRadioButtonId;
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState);
+        val selectedId = view.findViewById<RadioGroup>(R.id.dns_group)?.checkedRadioButtonId;
         val dnsValue = when(selectedId) {
             R.id.google_radio -> DNS_GOOGLE;
             R.id.cloudflare_radio -> DNS_CLOUDFLARE;
@@ -26,8 +26,10 @@ class SelectDNSProvider : Fragment() {
             putInt(rhap.keyDNS, dnsValue);
             apply();
         };
-        view?.findViewById<ImageButton>(R.id.finalizeButton)?.setOnClickListener {
-            startActivity(Intent(requireContext(), FinalizeActivity::class.java));
+        view.findViewById<ImageButton>(R.id.finalizeButton)?.setOnClickListener {
+            val intent = Intent(requireContext(), FinalizeActivity::class.java)
+            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
     }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

@@ -48,7 +48,7 @@ int executeShellCommands(const char *command, char * const arguments[]) {
     return -1;
 }
 
-JNIEXPORT jboolean JNICALL Java_tsukika_misc_hyein_setupCustomizer_FinalizeActivity_installThisBrowser(JNIEnv *env,jobject thiz, jint browser) {
+JNIEXPORT jboolean JNICALL Java_tsukika_misc_hyein_setupCustomizer_FinalizeFragment_installThisBrowser(JNIEnv *env,jobject thiz, jint browser) {
     if(browser != 1 && browser != 2 && browser != 3 && browser != 4) return JNI_FALSE;
     return (executeShellCommands("su", (char *[]) {"su", "-c", "pm", "install",(char *) browserAppPaths[browser], NULL}) == 0) ? JNI_TRUE : JNI_FALSE;
 }

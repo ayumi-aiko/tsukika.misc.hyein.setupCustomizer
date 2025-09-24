@@ -5,15 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.button.MaterialButton
-
-class WelcomeFragment : Fragment() {
+class GreetingFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_welcome, container, false)
+        return inflater.inflate(R.layout.fragment_greeting, container, false);
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState);
-        view.findViewById<MaterialButton>(R.id.nextButton).setOnClickListener {
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, SelectBrowser()).commit()
+        val nextButton = view.findViewById<MaterialButton>(R.id.nextButton);
+        nextButton.setOnClickListener {
+            requireActivity().finishAffinity();
         }
     }
 }
